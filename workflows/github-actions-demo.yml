@@ -1,5 +1,6 @@
 name: GitHub Actions Demo
-on: workflow_call
-jobs:
-  Check-python-version:
-    run: python --version  
+on: 
+  workflow_dispatch:
+    jobs:
+      Check-python-version:
+        run: python --version  
