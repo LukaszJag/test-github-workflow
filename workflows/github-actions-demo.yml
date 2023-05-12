@@ -1,6 +1,8 @@
 name: GitHub Actions Demo
 on: 
   workflow_dispatch:
-    jobs:
-      Check-python-version:
-        run: python --version  
+jobs:
+  Check-python-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python --version  
